@@ -1,2 +1,7 @@
 run:
   web: npm start
+setup:
+  addons:
+    - plan: heroku-redis:hobby-dev
+  config:
+    FOO_BAR: barbar
